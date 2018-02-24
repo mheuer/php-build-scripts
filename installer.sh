@@ -325,6 +325,9 @@ else
 		set -e
 		echo "[3/3] No prebuilt PHP found, compiling PHP automatically. This might take a while."
 		echo
+                # Workaround for PMMP being on 7.2, but compilation only working for downloading 7.2.2
+                echo "Forcing compilation with PHP 7.2.2"
+                unset PHP_VERSION
 		exec "./compile.sh" -l
 	fi
 fi
