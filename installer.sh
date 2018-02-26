@@ -328,7 +328,7 @@ else
                 # Workaround for PMMP being on 7.2, but compilation only working for downloading 7.2.2
                 echo "Forcing compilation with PHP 7.2.2"
                 unset PHP_VERSION
-		exec "./compile.sh" -l
+		exec "./compile.sh"
 	fi
 fi
 
